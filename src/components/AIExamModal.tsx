@@ -366,7 +366,7 @@ export default function AIExamModal({
                               className={`flex items-start gap-3 p-3 rounded-2xl border transition duration-200 cursor-pointer ${
                                 isChecked
                                   ? 'bg-[#2A1137]/60 border-[#E11D48] text-white shadow-sm'
-                                  : 'bg-[#0E0314] border-[#3E1444]/60 text-slate-350 hover:border-[#3E1444]'
+                                  : 'bg-[#0E0314] border-[#3E1444]/60 text-slate-200 hover:border-[#E11D48]/30 hover:text-white'
                               }`}
                             >
                               <input
@@ -488,14 +488,14 @@ export default function AIExamModal({
                               </div>
 
                               <div className="flex items-center gap-3.5 flex-shrink-0">
-                                <span className="text-[10px] text-slate-450 font-mono">{r.date || 'Hôm nay'}</span>
+                                <span className="text-[10px] text-slate-400 font-mono">{r.date || 'Hôm nay'}</span>
                                 <button
                                   type="button"
                                   onClick={(e) => {
                                     e.stopPropagation();
                                     onDeleteRecord(r.id);
                                   }}
-                                  className="w-7 h-7 rounded-lg text-slate-450 hover:text-red-400 hover:bg-red-500/10 flex items-center justify-center transition cursor-pointer"
+                                  className="w-7 h-7 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 flex items-center justify-center transition cursor-pointer"
                                   title="Xóa hồ sơ"
                                 >
                                   <Trash2 className="w-3.5 h-3.5" />
